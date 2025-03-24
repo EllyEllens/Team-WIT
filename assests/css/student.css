@@ -1,0 +1,135 @@
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: hsl(113, 82%, 35%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Knop stijlen */
+.add-user-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.add-user-btn {
+    background-color: #0e6402;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.add-user-btn:hover {
+    background-color: #218838;
+}
+
+/* Tabel stijlen */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: hsl(113, 82%, 35%);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Actie knoppen */
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Stijl voor de Terug naar overzicht-knop */
+.back-btn {
+    display: inline-block;
+    background-color: #0e6402; /* Donkergroen */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #218838; /* Iets lichter groen */
+    transform: scale(1.05); /* Kleine vergroting bij hover */
+}
+
+
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+    th, td {
+        font-size: 14px;
+    }
+}
